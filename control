@@ -1,9 +1,9 @@
-Package: com.williammuff.volumecontrolxi
-Name: VolumeControlXI
+Package: com.jcsnider.volumecontrolxi3
+Name: VolumeControlXI3
 Depends: mobilesubstrate
 Version: 1.0.0
 Architecture: iphoneos-arm
 Description: Use volume keys to go to previous/next media. (DOWN + UP = NEXT | UP + DOWN = PREVIOUS)
-Maintainer: William Muff
-Author: William Muff
+Maintainer: JC Snider
+Author: JC Snider
 Section: Tweaks
