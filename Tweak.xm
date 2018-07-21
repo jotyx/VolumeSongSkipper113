@@ -1,4 +1,5 @@
 #import "MediaRemote.h"
+#import <AudioToolbox/AudioServices.h>
 
 @interface SpringBoard : NSObject
 -(BOOL)_handlePhysicalButtonEvent:(id)arg1 ;
@@ -82,8 +83,17 @@ NSTimer *backTimer;
             }
         }
 
+        for(UIPress* press in arg1.allPresses.allObjects) {
+            if (press.type == 104) {
+                return %orig;
+            }
+        }
+
         if (hasUp && hasDown) {
             MRMediaRemoteSendCommand(kMRTogglePlayPause, nil);
+            AudioServicesPlaySystemSoundWithCompletion(kSystemSoundID_Vibrate, ^{
+                AudioServicesDisposeSystemSoundID(kSystemSoundID_Vibrate);
+            });
             return false;
         }
 
@@ -161,6 +171,9 @@ NSTimer *backTimer;
     {
         if (upPressed) {
             MRMediaRemoteSendCommand(kMRNextTrack, nil);
+            AudioServicesPlaySystemSoundWithCompletion(kSystemSoundID_Vibrate, ^{
+                AudioServicesDisposeSystemSoundID(kSystemSoundID_Vibrate);
+            });
             upPressed = NO;
         }
     }
@@ -170,6 +183,9 @@ NSTimer *backTimer;
     {
         if (downPressed) {
             MRMediaRemoteSendCommand(kMRPreviousTrack, nil);
+            AudioServicesPlaySystemSoundWithCompletion(kSystemSoundID_Vibrate, ^{
+                AudioServicesDisposeSystemSoundID(kSystemSoundID_Vibrate);
+            });
             downPressed = NO;
         }
     }
