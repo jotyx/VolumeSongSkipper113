@@ -1,9 +1,9 @@
-Package: com.jcsnider.volumecontrolxi3
-Name: VolumeControlXI3
+Package: com.jcsnider.volumesongskipper113
+Name: VolumeSongSkipper113
 Depends: mobilesubstrate
-Version: 1.0.0
+Version: 1.0
 Architecture: iphoneos-arm
-Description: Use volume keys to go to previous/next media. (DOWN + UP = NEXT | UP + DOWN = PREVIOUS)
+Description: Use volume keys to go to previous/next media. (Hold up = Next Song | Hold down = Previous Song, Press Both = Toggle Play/Pause)
 Maintainer: JC Snider
 Author: JC Snider
 Section: Tweaks
