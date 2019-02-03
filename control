@@ -1,9 +1,9 @@
-Package: com.jcsnider.volumesongskipper113
-Name: VolumeSongSkipper113
+Package: com.jotyx.volumeskippernoplaypause
+Name: VolumeSkipperNoPlayPause
 Depends: mobilesubstrate
-Version: 1.0.2
+Version: 1.0.0
 Architecture: iphoneos-arm
-Description: Use volume keys to go to previous/next media. (Hold up = Next Song | Hold down = Previous Song, Press Both = Toggle Play/Pause)
-Maintainer: gilshahar7
+Description: Use volume keys to go to previous/next media. (Hold up = Next Song | Hold down = Previous Song)
+Maintainer: Jotyx
 Author: JC Snider
 Section: Tweaks

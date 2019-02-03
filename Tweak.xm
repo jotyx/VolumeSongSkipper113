@@ -99,10 +99,10 @@ NSTimer *backTimer;
 
 
         if (hasUp && hasDown) {
-            MRMediaRemoteSendCommand(kMRTogglePlayPause, nil);
-            AudioServicesPlaySystemSoundWithCompletion(SystemSoundID(1520), ^{
-                AudioServicesDisposeSystemSoundID(SystemSoundID(1520));
-            });
+            // MRMediaRemoteSendCommand(kMRTogglePlayPause, nil);
+            // AudioServicesPlaySystemSoundWithCompletion(SystemSoundID(1520), ^{
+            //    AudioServicesDisposeSystemSoundID(SystemSoundID(1520));
+            // });
             return false;
         }
 		if(hasUp && hasLock){
