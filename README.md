@@ -1,4 +1,4 @@
-# VolumeSongSkipper113#
+# VolumeSongSkipperNoPlayPause
 
-This bug fix was requested here: https://old.reddit.com/r/TweakBounty/comments/93wtfl/10_1131_updatebugfix_volumesongskipper113_to_work/?ref=share&ref_source=link
-
+- Based on VolumeSongSkipper113
+- NO option for music play/pause, just next/previous song
